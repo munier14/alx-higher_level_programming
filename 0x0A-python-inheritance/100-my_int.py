@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-class MyInt(int):
-    """ Class that inherits from class int"""
+'''Python in Holberton'''
 
-    def __eq__(self, other):
-        """ Method that returns != check """
-        return int.__ne__(self, other)
+
+class MyInt(int):
+    '''Class inherited from int'''
+    def __eq__(self, oposite):
+        '''Refers to equal to'''
+        return False
 
     def __ne__(self, other):
-        """ Method that returns == check """
-        return int.__eq__(self, other)
+        '''Refers to not equal to'''
+        return True
